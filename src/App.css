@@ -1,0 +1,32 @@
+:root {
+	--primary-blue: #03a9f4;
+	--primary-blue-light: #67daff;
+	--primary-blue-dark: #007ac1;
+	--breakpoint-largest: 87.5em;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: 100vh;
+}
+
+/* MAP */
+
+/* LISTINGS */
