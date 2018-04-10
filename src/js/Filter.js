@@ -3,7 +3,8 @@ import { priceFormat } from './utils/Formatters';
 
 class Filter extends Component {
     render() {
-        const { handleFilterChange, resetFilter } = this.props;
+        const { handleFilterChange, resetFilter, currentMinPrice } = this.props;
+        console.log(currentMinPrice);
         return (
             <form ref={input => (this.form = input)} className="filter">
                 <div className="filterBox">

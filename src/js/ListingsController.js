@@ -134,6 +134,7 @@ class ListingsController extends Component {
 					<ListingHeader
 						handleFilterChange={this.handleFilterChange}
 						resetFilter={this.resetFilter}
+						currentMinPrice={this.state.priceFrom}
 					/>
 					{currentListings.map(listing => {
 						return (

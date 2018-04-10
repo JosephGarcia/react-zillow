@@ -3,7 +3,11 @@ import image from '../img/house-location-pin.svg';
 import Filter from './Filter';
 import '../ListingHeader.css';
 
-const ListingHeader = ({ handleFilterChange, resetFilter }) => (
+const ListingHeader = ({
+	handleFilterChange,
+	resetFilter,
+	currentMinPrice
+}) => (
 	<div className="listing__header">
 		<div>
 			<img
@@ -17,6 +21,7 @@ const ListingHeader = ({ handleFilterChange, resetFilter }) => (
 		<Filter
 			handleFilterChange={handleFilterChange}
 			resetFilter={resetFilter}
+			currentMinPrice={currentMinPrice}
 		/>
 	</div>
 );
